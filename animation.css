@@ -1,0 +1,59 @@
+@keyframes sliding_kf {
+  from {
+    translate: 0% 0;
+  }
+  to {
+    translate: -100% 0;
+  }
+}
+
+.marquee_left {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 5px;
+}
+
+.marquee_content_l {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  animation-name: slide_left;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes slide_left {
+  from {
+    translate: 0% 0;
+  }
+  to {
+    translate: -100% 0;
+  }
+}
+
+.marquee_right {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 5px;
+}
+.marquee_content_r {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  animation-name: slide_right;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes slide_right {
+  from {
+    translate: -100% 0;
+  }
+  to {
+    translate: 0% 0;
+  }
+}
