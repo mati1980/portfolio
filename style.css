@@ -6,12 +6,20 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "pt_serifregular", sans-serif;
+  font-family: "palanquindark", sans-serif;
+  color: var(--farve3);
 }
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/***** FONT *****/
+
+@font-face {
+  font-family: "palanquindark";
+  src: url("palanquindark-regular-webfont.woff2") format("woff2");
 }
 
 /***** CSS VARIABLER *****/
@@ -48,8 +56,8 @@ header a {
   text-transform: uppercase;
   color: var(--farve3);
   font-family: "Rubik Mono One", sans-serif;
-  padding: 1rem;
-  font-size: 25px;
+  padding: 0.5rem;
+  font-size: 15px;
 }
 
 nav ul li a {
@@ -65,9 +73,23 @@ header a:hover {
 
 h1 {
   font-family: "Rubik Mono One", sans-serif;
-  font-size: 80px;
+  font-size: 30px;
   text-align: center;
   color: var(--farve3);
+  margin-top: 2rem;
+}
+.forside_h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: var(--farve2);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 
 body {
@@ -78,4 +100,68 @@ h4 {
   text-transform: uppercase;
   margin-top: 3rem;
   color: var(--farve5);
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 2000px;
+  margin-inline: 10px;
+}
+
+.forside_main {
+  margin-inline: 0;
+}
+
+.mobil_hide {
+  display: none;
+}
+
+img {
+  border: 1px solid var(--farve2);
+  border-radius: 2px;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 800px) {
+  main {
+    max-width: 2000px;
+    margin-inline: 60px;
+  }
+
+  .grid-1_1 {
+    margin-inline: 80px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+  header a {
+    padding: 1rem;
+    font-size: 25px;
+  }
+  .mobil_hide {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    max-width: 2000px;
+    margin-inline: 80px;
+  }
+
+  .grid-1_1 {
+    margin-inline: 100px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  /***burgermenu***/
 }

@@ -1,0 +1,17 @@
+@media (min-width: 600px) {
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .div_right {
+    border-right: solid var(--farve5);
+    padding-right: 20px;
+  }
+  .div_left {
+    padding-left: 20px;
+  }
+}
+.mobilgrid-1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
