@@ -59,7 +59,11 @@ a {
   background-color: antiquewhite;
 }
 
-@media (max-width: 768px) {
+.hide {
+  display: none;
+}
+
+@media (max-width: 1000px) {
   .hamburger {
     display: block;
   }
@@ -77,11 +81,12 @@ a {
   .nav_menu {
     position: fixed;
     left: 0%;
-    top: -30%;
+    top: -100%;
     gap: 0;
     flex-direction: column;
     background-color: lightpink;
     width: 100%;
+    height: 100%;
     text-align: center;
     transition: 0.3s;
   }
