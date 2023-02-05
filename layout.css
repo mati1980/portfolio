@@ -10,6 +10,15 @@
   .div_left {
     padding-left: 20px;
   }
+  .ommig_grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ommig_right {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 .mobilgrid-1_1 {
   display: grid;

@@ -10,3 +10,18 @@ function sidenVises() {
     navMenu.classList.toggle("active");
   });
 }
+
+window.addEventListener("scroll", function () {
+  console.log("scroll");
+  var images = document.querySelectorAll(".reveal-on-scroll");
+  var windowHeight = window.innerHeight;
+
+  for (var i = 0; i < images.length; i++) {
+    var image = images[i];
+    var imageTop = image.getBoundingClientRect().top;
+
+    if (imageTop < windowHeight) {
+      image.classList.add("revealed");
+    }
+  }
+});

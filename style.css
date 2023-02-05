@@ -40,6 +40,7 @@ header {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: var(--farve2);
+  z-index: 1;
 }
 
 nav ul {
@@ -108,10 +109,6 @@ header a:hover {
   border-radius: 5px;
 }
 
-.hide {
-  display: none;
-}
-
 @media (max-width: 1000px) {
   .hamburger {
     display: block;
@@ -145,10 +142,9 @@ header a:hover {
   }
 
   .nav_menu.active {
-    top: 20%;
+    top: 7%;
   }
 }
-
 /***** GENEREL STYLING *****/
 
 h1 {
@@ -174,6 +170,7 @@ h2 {
 
 h3 {
   color: var(--farve5);
+  font-size: 15px;
 }
 
 h4 {
@@ -211,10 +208,6 @@ main {
   flex-direction: column;
 }
 
-.mobil_hide {
-  display: none;
-}
-
 img {
   border: 1px solid var(--farve2);
   border-radius: 2px;
@@ -226,8 +219,28 @@ figcaption {
   color: var(--farve4);
 }
 
+p {
+  padding-bottom: 0.5rem;
+}
+
+.ommig_h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.ommig_h3 {
+  text-transform: uppercase;
+}
+
+.ommig_h4 {
+  margin-top: 0;
+  text-transform: none;
+  color: var(--farve4);
+}
+
 @media (min-width: 600px) {
-  .grid-1_1 {
+  .grid-1_1,
+  .ommig_grid-1_1 {
     margin-inline: 20px;
   }
   .forside_h1 {
@@ -245,7 +258,8 @@ figcaption {
     margin-inline: 40px;
   }
 
-  .grid-1_1 {
+  .grid-1_1,
+  .ommig_grid-1_1 {
     margin-inline: 60px;
   }
 
@@ -256,9 +270,7 @@ figcaption {
     padding: 1rem;
     font-size: 25px;
   }
-  .mobil_hide {
-    display: block;
-  }
+
   .forside_h1 {
     font-size: 80px;
   }
@@ -273,7 +285,8 @@ figcaption {
     font-size: 10px;
   }
 
-  .grid-1_1 {
+  .grid-1_1,
+  .ommig_grid-1_1 {
     margin-inline: 100px;
   }
 
@@ -283,6 +296,10 @@ figcaption {
 
   h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   a {
