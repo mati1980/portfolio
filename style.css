@@ -171,6 +171,7 @@ h2 {
 h3 {
   color: var(--farve5);
   font-size: 15px;
+  padding-top: 1.5rem;
 }
 
 h4 {
@@ -230,6 +231,7 @@ p {
 
 .ommig_h3 {
   text-transform: uppercase;
+  padding-top: 0;
 }
 
 .ommig_h4 {
