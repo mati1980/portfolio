@@ -238,6 +238,24 @@ p {
   color: var(--farve4);
 }
 
+i {
+  font-size: 30px;
+  color: var(--farve2);
+  padding: 0.5rem;
+}
+i:hover {
+  color: var(--farve5);
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_h1 {
+  color: var(--farve4);
+  padding-top: 1rem;
+}
+
 @media (min-width: 600px) {
   .grid-1_1,
   .ommig_grid-1_1 {
